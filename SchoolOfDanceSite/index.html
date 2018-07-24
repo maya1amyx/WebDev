@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>School Of Dance</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- <div style="width: 100%; height: 100px; position: relative;">
+        <img id="image1" style="position: relative;" src="gradient.jpg" alt="gradient"  height="100px" width=200px/>
+        <img id="image2" style="position: absolute; top: <y>px; left: <x>px;" src="dancer_logo.png" alt="dancer" height="80px"/>
+      </div> -->
+
+      <h1 align="center">Alysha's Epic School of Dance</h1>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trending.html">Trending</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <div class="info">
+      <h2 align="center">Search for your next favorite choreography!</h2>
+
+    </div>
+
+    <input id="song_name" type="text" row="1" cols="200" width=70% align="center">
+
+    <button type="button" name="button" onclick>Search</button>
+
+
+    <!--Rows and Columns of videos-->
+    <div class="row">
+      <div class="column">
+
+        <!--Shakira-->
+        <iframe width="100%" src="https://www.youtube.com/embed/UZhD5XUemIs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen onclick="GoToShakira()"></iframe>
+      </div>
+      <div class="column">
+
+        <!--Party in the USA-->
+        <iframe width=100% src="https://www.youtube.com/embed/aL9y2dnWmrI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen onclick="GoToUSA()"></iframe>
+
+      </div>
+      <div class="column">
+        <iframe width=100% src="https://www.youtube.com/embed/aL9y2dnWmrI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <iframe width="100%" src="https://www.youtube.com/embed/UZhD5XUemIs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="column">
+
+        <iframe width=100% src="https://www.youtube.com/embed/aL9y2dnWmrI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      </div>
+      <div class="column">
+        <iframe width=100% src="https://www.youtube.com/embed/aL9y2dnWmrI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <img src="purple_gradient.jpg" alt="gradient" width=100% height=200px>
+    </footer>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function GoToUSA(){
+  window.location = "USA.html"
+}
+</script>
+
+  </body>
+</html>
